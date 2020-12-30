@@ -1,12 +1,14 @@
 .header {
     nav {
         padding: 24px;
+        padding-top: 10px;
     }
     
     &__menu-button { // mobile menu
-        background-color: transparent;
+        background: none;
         border: none;
         outline: none;
+        border-radius: 0px;
 
         > span {
             display: block;
@@ -19,4 +21,10 @@
             }
         } 
     }
+
+    &__links {
+        a {
+            font-size: $font-small;
+        }
+    } 
 }
