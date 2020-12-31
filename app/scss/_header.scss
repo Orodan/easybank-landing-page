@@ -1,7 +1,7 @@
 .header {
     nav {
-        padding: 24px;
-        padding-top: 10px;
+        height: 80px;
+        padding: 0 24px;
     }
 
     &__logo-link {
@@ -33,12 +33,38 @@
 
     &__links {
         display: flex;
+        height: 100%;
 
         a {
             font-size: $font-small;
+            transition: color 300ms ease-in-out;
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
 
             &:not(:last-child) {
                 margin-right: 32px;
+            }
+
+            &:hover {
+                color: $dark-blue;
+            }
+
+            &::before {
+                position: absolute;
+                content: '';
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 4px;
+                background: linear-gradient(to right, $lime-green, $bright-cyan);
+                opacity: 0;
+                transition: opacity 300ms ease-in-out;
+            }
+
+            &:hover::before {
+                opacity: 1;
             }
         }
     } 
