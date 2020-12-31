@@ -93,6 +93,16 @@ button {
   margin-bottom: 3px;
 }
 
+.header__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .header__links a {
   font-size: 0.875rem;
+}
+
+.header__links a:not(:last-child) {
+  margin-right: 32px;
 }

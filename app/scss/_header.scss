@@ -23,8 +23,14 @@
     }
 
     &__links {
+        display: flex;
+
         a {
             font-size: $font-small;
+
+            &:not(:last-child) {
+                margin-right: 32px;
+            }
         }
     } 
 }
