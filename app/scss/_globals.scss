@@ -52,7 +52,7 @@ button {
 
 // Visibility
 
-div.hide-for-mobile {
+.hide-for-mobile {
     // hide for tablet and mobile
     @include breakpoint-down(medium) {
         display: none;
