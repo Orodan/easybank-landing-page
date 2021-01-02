@@ -1,9 +1,10 @@
 const hamburgerButton = document.querySelector('#hamburger-button')
+const header = document.querySelector('header')
 
 hamburgerButton.addEventListener('click', () => {
-    if (hamburgerButton.classList.contains('open')) {
-        hamburgerButton.classList.remove('open')
+    if (header.classList.contains('menu-open')) {
+        header.classList.remove('menu-open')
     } else {
-        hamburgerButton.classList.add('open')
+        header.classList.add('menu-open')
     }
 })

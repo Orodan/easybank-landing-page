@@ -1,5 +1,5 @@
 .header nav {
-  height: 80px;
+  height: 3.75rem;
   padding: 0 24px;
 }
 
@@ -51,20 +51,6 @@
           transform-origin: 4px -2px;
 }
 
-.header__menu-button.open > span:first-child {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.header__menu-button.open > span:nth-child(2) {
-  opacity: 0;
-}
-
-.header__menu-button.open > span:last-child {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
 .header__links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,6 +96,46 @@
 
 .header__links a:hover::before {
   opacity: 1;
+}
+
+.header .overlay {
+  position: fixed;
+  top: 3.75rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2d314d), to(transparent));
+  background: linear-gradient(#2d314d, transparent);
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.header.menu-open .header__menu-button > span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header.menu-open .header__menu-button > span:nth-child(2) {
+  opacity: 0;
+}
+
+.header.menu-open .header__menu-button > span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.header.menu-open .overlay {
+  position: fixed;
+  top: 3.75rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2d314d), to(transparent));
+  background: linear-gradient(#2d314d, transparent);
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
 }
 
 html {
