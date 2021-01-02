@@ -33,10 +33,36 @@
   width: 26px;
   height: 2px;
   background-color: #2d314d;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .header__menu-button > span:not(:last-child) {
   margin-bottom: 5px;
+}
+
+.header__menu-button > span:first-child {
+  -webkit-transform-origin: 5px 5px;
+          transform-origin: 5px 5px;
+}
+
+.header__menu-button > span:last-child {
+  -webkit-transform-origin: 4px -2px;
+          transform-origin: 4px -2px;
+}
+
+.header__menu-button.open > span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header__menu-button.open > span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__menu-button.open > span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .header__links {

@@ -32,11 +32,34 @@
             width: 26px;
             height: 2px;
             background-color: $dark-blue;
+            transition: all 300ms ease-in-out;
 
             &:not(:last-child) {
                 margin-bottom: 5px;
             }
-        } 
+
+            &:first-child {
+                transform-origin: 5px 5px;
+            }
+
+            &:last-child {
+                transform-origin: 4px -2px;
+            }
+        }
+
+        &.open {
+            > span:first-child {
+                transform: rotate(45deg)
+            }
+
+            > span:nth-child(2) {
+                opacity: 0;
+            }
+
+            > span:last-child {
+                transform: rotate(-45deg)
+            }
+        }
     }
 
     &__links {
