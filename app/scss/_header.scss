@@ -90,13 +90,13 @@ $header-height: 3.75rem;
     }
 
     .overlay {
+        display: none;
         position: fixed;
         top: $header-height;
         left: 0;
         right: 0;
         bottom: 0;
         background: linear-gradient($dark-blue, transparent);
-        opacity: 0;
         transition: opacity 300ms ease-in-out;
     }
 }
@@ -120,14 +120,8 @@ $header-height: 3.75rem;
         }
 
         .overlay {
-            position: fixed;
-            top: $header-height;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient($dark-blue, transparent);
-            opacity: 1;
-            transition: opacity 300ms ease-in-out;
+            display: block;
+            animation: fade-in 300ms ease-in-out forwards;
         }
     }
 }

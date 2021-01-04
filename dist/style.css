@@ -1,4 +1,24 @@
-.header nav {
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-out {}
+
+@keyframes fade-out {}.header nav {
   height: 3.75rem;
   padding: 0 24px;
 }
@@ -100,6 +120,7 @@
 }
 
 .header .overlay {
+  display: none;
   position: fixed;
   top: 3.75rem;
   left: 0;
@@ -107,7 +128,6 @@
   bottom: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#2d314d), to(transparent));
   background: linear-gradient(#2d314d, transparent);
-  opacity: 0;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
 }
@@ -127,16 +147,9 @@
 }
 
 .header.menu-open .overlay {
-  position: fixed;
-  top: 3.75rem;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2d314d), to(transparent));
-  background: linear-gradient(#2d314d, transparent);
-  opacity: 1;
-  -webkit-transition: opacity 300ms ease-in-out;
-  transition: opacity 300ms ease-in-out;
+  display: block;
+  -webkit-animation: fade-in 300ms ease-in-out forwards;
+          animation: fade-in 300ms ease-in-out forwards;
 }
 
 html {
