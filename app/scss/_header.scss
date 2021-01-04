@@ -90,8 +90,9 @@ $header-height: 3.75rem;
     }
 
     .overlay {
-        display: none;
         position: fixed;
+        display: block;
+        visibility: hidden;
         top: $header-height;
         left: 0;
         right: 0;
@@ -117,11 +118,6 @@ $header-height: 3.75rem;
             > span:last-child {
                 transform: rotate(-45deg)
             }
-        }
-
-        .overlay {
-            display: block;
-            animation: fade-in 300ms ease-in-out forwards;
         }
     }
 }

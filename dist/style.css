@@ -1,24 +1,64 @@
 @-webkit-keyframes fade-in {
   from {
     opacity: 0;
+    visibility: hidden;
+  }
+  1% {
+    visibility: visible;
   }
   to {
     opacity: 1;
+    visibility: visible;
   }
 }
 
 @keyframes fade-in {
   from {
     opacity: 0;
+    visibility: hidden;
+  }
+  1% {
+    visibility: visible;
   }
   to {
     opacity: 1;
+    visibility: visible;
   }
 }
 
-@-webkit-keyframes fade-out {}
+.fade-in {
+  -webkit-animation: fade-in 300ms ease-in-out forwards;
+          animation: fade-in 300ms ease-in-out forwards;
+}
 
-@keyframes fade-out {}.header nav {
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.fade-out {
+  -webkit-animation: fade-out 300ms ease-in-out forwards;
+          animation: fade-out 300ms ease-in-out forwards;
+}
+
+.header nav {
   height: 3.75rem;
   padding: 0 24px;
 }
@@ -120,8 +160,9 @@
 }
 
 .header .overlay {
-  display: none;
   position: fixed;
+  display: block;
+  visibility: hidden;
   top: 3.75rem;
   left: 0;
   right: 0;
@@ -144,12 +185,6 @@
 .header.menu-open .header__menu-button > span:last-child {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-}
-
-.header.menu-open .overlay {
-  display: block;
-  -webkit-animation: fade-in 300ms ease-in-out forwards;
-          animation: fade-in 300ms ease-in-out forwards;
 }
 
 html {
