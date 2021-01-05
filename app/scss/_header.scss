@@ -106,10 +106,15 @@ $header-height: 3.75rem;
         visibility: hidden;
         z-index: 1;
 
-        a {
-            padding: 1rem 0;
+        a, a:visited {
+            padding: 0.75rem 0;
             text-align: center;
             color: $dark-blue;
+            transition: color 300ms ease-in-out;
+        }
+
+        a:hover {
+            color: $grayish-blue;
         }
     }
 

@@ -174,10 +174,16 @@
   z-index: 1;
 }
 
-.header__menu a {
-  padding: 1rem 0;
+.header__menu a, .header__menu a:visited {
+  padding: 0.75rem 0;
   text-align: center;
   color: #2d314d;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+.header__menu a:hover {
+  color: #9698a6;
 }
 
 .header .overlay {
