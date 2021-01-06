@@ -21,25 +21,6 @@ a, a:visited, a:hover {
     color: $grayish-blue;
 }
 
-// Flexbox
-.flex {
-    display: flex;
-
-    &-jc-sb {
-        justify-content: space-between;
-    }
-
-    &-jc-c {
-        justify-content: center;
-    }
-
-    &-ai-c {
-        align-items: center;
-    }
-}
-
-// Buttons
-
 button {
     padding: 0.875rem 2.1875rem;
     background: linear-gradient(to right, $lime-green, $bright-cyan);
@@ -48,20 +29,4 @@ button {
     border: none;
     color: $white;
     font-size: $font-small;
-}
-
-// Visibility
-
-.hide-for-mobile {
-    // hide for tablet and mobile
-    @include breakpoint-down(medium) {
-        display: none;
-    }
-}
-
-.hide-for-desktop {
-    // hide for desktop viewport widths
-    @include breakpoint-up(large) {
-        display: none;
-    }
 }

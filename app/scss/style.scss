@@ -2,5 +2,7 @@
 @import 'mixins';
 @import 'animations';
 
+@import 'globals'; 
 @import 'header';
-@import 'globals'; // Should be imported last, defined globals rules for all the app
+
+@import 'helpers';

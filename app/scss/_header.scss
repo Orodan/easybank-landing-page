@@ -138,6 +138,10 @@ $header-height: 3.75rem;
 .header {
     &.menu-open {
         .header__menu-button {
+            > span {
+                background-color: $grayish-blue;
+            }
+
             > span:first-child {
                 transform: rotate(45deg)
             }
