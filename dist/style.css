@@ -255,18 +255,6 @@ button:hover {
           transform: rotate(-45deg);
 }
 
-@media (min-width: 64em) {
-  .hero {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    overflow-x: visible;
-  }
-}
-
 .hero__image {
   position: relative;
   background-image: url("/images/bg-intro-mobile.svg");
@@ -274,35 +262,6 @@ button:hover {
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 17.5rem;
-}
-
-@media (min-width: 64em) {
-  .hero__image {
-    -webkit-box-flex: 3;
-        -ms-flex: 3;
-            flex: 3;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    height: 41rem;
-    background-image: url("/images/bg-intro-desktop.svg");
-    background-position: -20px -250px;
-    background-size: 190%;
-    background-image: none;
-  }
-}
-
-@media (min-width: 64em) {
-  .hero__image::before {
-    content: '';
-    position: absolute;
-    background-image: url("/images/bg-intro-desktop.svg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center -218px;
-    height: 100%;
-    width: 165%;
-  }
 }
 
 .hero__image::after {
@@ -316,31 +275,8 @@ button:hover {
   width: 100%;
 }
 
-@media (min-width: 64em) {
-  .hero__image::after {
-    background-size: 100%;
-    background-position: right -138px;
-    height: 134%;
-    width: 121%;
-    -webkit-transform: translateX(21%);
-            transform: translateX(21%);
-  }
-}
-
 .hero__text {
   text-align: center;
-}
-
-@media (min-width: 64em) {
-  .hero__text {
-    -webkit-box-flex: 2;
-        -ms-flex: 2;
-            flex: 2;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    text-align: left;
-  }
 }
 
 .hero__text h1 {
@@ -351,13 +287,6 @@ button:hover {
   margin-bottom: 1.5rem;
 }
 
-@media (min-width: 64em) {
-  .hero__text h1 {
-    margin-bottom: 2.5rem;
-    font-size: 3.25rem;
-  }
-}
-
 .hero__text p {
   font-weight: 300;
   line-height: 1.7rem;
@@ -365,6 +294,59 @@ button:hover {
 }
 
 @media (min-width: 64em) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow-x: visible;
+  }
+  .hero__image {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    height: 41rem;
+    background-image: url("/images/bg-intro-desktop.svg");
+    background-position: -20px -250px;
+    background-size: 190%;
+    background-image: none;
+  }
+  .hero__image::before {
+    content: '';
+    position: absolute;
+    background-image: url("/images/bg-intro-desktop.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center -218px;
+    height: 100%;
+    width: 165%;
+  }
+  .hero__image::after {
+    background-size: 100%;
+    background-position: right -138px;
+    height: 134%;
+    width: 121%;
+    -webkit-transform: translateX(21%);
+            transform: translateX(21%);
+  }
+  .hero__text {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    text-align: left;
+  }
+  .hero__text h1 {
+    margin-bottom: 2.5rem;
+    font-size: 3.25rem;
+  }
   .hero__text p {
     margin-bottom: 2.5rem;
   }
