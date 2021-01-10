@@ -20,9 +20,23 @@
             background-image: url('/images/bg-intro-desktop.svg');
             background-position: -20px -250px;
             background-size: 190%;
+            background-image: none;
         }
 
         &::before {
+            @include breakpoint-up(large) {
+                content: '';
+                position: absolute;
+                background-image: url('/images/bg-intro-desktop.svg');
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: center -218px;
+                height: 100%;
+                width: 165%;
+            }
+        }
+
+        &::after {
             content: '';
             position: absolute;
             background-image: url('/images/image-mockups.png');
@@ -33,6 +47,11 @@
             width: 100%;
 
             @include breakpoint-up(large) {
+                background-size: 100%;
+                background-position: right -138px;
+                height: 134%;
+                width: 121%;
+                transform: translateX(21%);
             }
         }
     }
