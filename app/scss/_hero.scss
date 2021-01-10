@@ -1,4 +1,10 @@
 .hero {
+    @include breakpoint-up(large) {
+        display: flex;
+        align-items: center;
+        overflow-x: visible;
+    }
+
     &__image {
         position: relative;
         background-image: url('/images/bg-intro-mobile.svg');
@@ -6,6 +12,15 @@
         background-repeat: no-repeat;
         background-position: center center;
         min-height: 17.5rem;
+
+        @include breakpoint-up(large) {
+            flex: 3;
+            order: 2;
+            height: 41rem;
+            background-image: url('/images/bg-intro-desktop.svg');
+            background-position: -20px -250px;
+            background-size: 190%;
+        }
 
         &::before {
             content: '';
@@ -16,11 +31,20 @@
             background-position: center 92%;
             height: 100%;
             width: 100%;
+
+            @include breakpoint-up(large) {
+            }
         }
     }
 
     &__text {
         text-align: center;
+
+        @include breakpoint-up(large) {
+            flex: 2;
+            order: 1;
+            text-align: left;
+        }
         
         h1 {
             font-weight: 300;
@@ -28,12 +52,21 @@
             line-height: 1.15;
             font-size: 2.3125rem;
             margin-bottom: 1.5rem;
+
+            @include breakpoint-up(large) {
+                margin-bottom: 2.5rem;
+                font-size: $font-xlarge;
+            }
         }
 
         p {
             font-weight: 300;
             line-height: 1.7rem;
             margin-bottom: 2.25rem;
+
+            @include breakpoint-up(large) {
+                margin-bottom: 2.5rem;
+            }
         }
     }
 }

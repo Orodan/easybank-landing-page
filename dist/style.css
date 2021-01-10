@@ -100,8 +100,6 @@ button:hover {
 
 .header nav {
   height: 3.75rem;
-  padding-top: 0;
-  padding-bottom: 0;
 }
 
 .header__logo-link {
@@ -257,6 +255,18 @@ button:hover {
           transform: rotate(-45deg);
 }
 
+@media (min-width: 64em) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow-x: visible;
+  }
+}
+
 .hero__image {
   position: relative;
   background-image: url("/images/bg-intro-mobile.svg");
@@ -264,6 +274,21 @@ button:hover {
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 17.5rem;
+}
+
+@media (min-width: 64em) {
+  .hero__image {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    height: 41rem;
+    background-image: url("/images/bg-intro-desktop.svg");
+    background-position: -20px -250px;
+    background-size: 190%;
+  }
 }
 
 .hero__image::before {
@@ -281,6 +306,18 @@ button:hover {
   text-align: center;
 }
 
+@media (min-width: 64em) {
+  .hero__text {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    text-align: left;
+  }
+}
+
 .hero__text h1 {
   font-weight: 300;
   color: #2d314d;
@@ -289,10 +326,23 @@ button:hover {
   margin-bottom: 1.5rem;
 }
 
+@media (min-width: 64em) {
+  .hero__text h1 {
+    margin-bottom: 2.5rem;
+    font-size: 3.25rem;
+  }
+}
+
 .hero__text p {
   font-weight: 300;
   line-height: 1.7rem;
   margin-bottom: 2.25rem;
+}
+
+@media (min-width: 64em) {
+  .hero__text p {
+    margin-bottom: 2.5rem;
+  }
 }
 
 .flex {
@@ -336,8 +386,39 @@ button:hover {
 }
 
 .container {
+  max-width: 69.375rem;
+  margin: 0 auto;
+}
+
+.container--p-all {
   padding-top: 2.25rem;
   padding-right: 1.5rem;
   padding-bottom: 2.25rem;
   padding-left: 1.5rem;
+}
+
+.container--p-y {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
+.container--p-x {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.container--p-t {
+  padding-top: 2.25rem;
+}
+
+.container--p-b {
+  padding-bottom: 2.25rem;
+}
+
+.container--p-l {
+  padding-left: 1.5rem;
+}
+
+.container--p-r {
+  padding-right: 1.5rem;
 }
