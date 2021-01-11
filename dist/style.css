@@ -319,9 +319,6 @@ button:hover {
         -ms-flex-order: 2;
             order: 2;
     height: 41rem;
-    background-image: url("/images/bg-intro-desktop.svg");
-    background-position: -20px -250px;
-    background-size: 190%;
     background-image: none;
   }
   .hero__image::before {
