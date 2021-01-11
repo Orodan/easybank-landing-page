@@ -38,6 +38,20 @@
     }
 }
 
+// Tablet
+
+@include breakpoint-up(medium) {
+    .hero {
+        &__image {
+            min-height: 25rem;
+
+            &::after {
+                background-size: 50%;
+            }
+        }
+    }
+}
+
 // Desktop
 
 @include breakpoint-up(large) {

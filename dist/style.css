@@ -293,6 +293,15 @@ button:hover {
   margin-bottom: 2.25rem;
 }
 
+@media (min-width: 40em) {
+  .hero__image {
+    min-height: 25rem;
+  }
+  .hero__image::after {
+    background-size: 50%;
+  }
+}
+
 @media (min-width: 64em) {
   .hero {
     display: -webkit-box;
