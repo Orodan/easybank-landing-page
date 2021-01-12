@@ -255,6 +255,10 @@ button:hover {
           transform: rotate(-45deg);
 }
 
+.hero {
+  background-color: #fafafa;
+}
+
 .hero__image {
   position: relative;
   background-image: url("/images/bg-intro-mobile.svg");

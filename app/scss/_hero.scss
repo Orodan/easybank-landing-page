@@ -1,4 +1,6 @@
 .hero {
+    background-color: $very-light-gray;
+
     &__image {
         position: relative;
         background-image: url('/images/bg-intro-mobile.svg');
