@@ -59,8 +59,10 @@
 
 @include breakpoint-up(large) {
     .hero {
-        display: flex;
-        align-items: center;
+        .container {
+            display: flex;
+            align-items: center;
+        }
 
         &__image {
             flex: 3;
