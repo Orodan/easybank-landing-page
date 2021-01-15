@@ -367,6 +367,12 @@ button:hover {
   text-align: center;
 }
 
+@media (max-width: 39.9375em) {
+  .qualities__list section:not(:last-child) {
+    margin-top: 64px;
+  }
+}
+
 .qualities h2 {
   font-weight: 300;
   color: #2d314d;
@@ -386,15 +392,52 @@ button:hover {
 .qualities p {
   font-weight: 300;
   line-height: 1.7rem;
-  margin-bottom: 4rem;
 }
 
 .qualities img {
   margin-bottom: 1.5rem;
 }
 
-.qualities section:last-child p {
-  margin-bottom: 0px;
+@media (min-width: 40em) {
+  .qualities__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .qualities__list section {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding: 0 16px;
+    margin-top: 64px;
+  }
+}
+
+@media (min-width: 64em) {
+  .qualities {
+    text-align: left;
+  }
+  .qualities__intro {
+    width: 50%;
+  }
+  .qualities__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .qualities__list section {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 0 32px 0 0;
+    margin-top: 70px;
+  }
+  .qualities__list section:last-child {
+    margin-right: 0;
+  }
 }
 
 .flex {
