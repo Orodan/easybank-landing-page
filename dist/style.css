@@ -76,6 +76,14 @@ h1, h2, h3 {
   margin-top: 0px;
 }
 
+h2 {
+  font-weight: 300;
+  color: #2d314d;
+  line-height: 2.5rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
 a, a:visited, a:hover {
   text-decoration: none;
   color: #9698a6;
@@ -373,14 +381,6 @@ button:hover {
   }
 }
 
-.qualities h2 {
-  font-weight: 300;
-  color: #2d314d;
-  line-height: 2.5rem;
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-
 .qualities h3 {
   font-weight: 300;
   color: #2d314d;
@@ -439,6 +439,49 @@ button:hover {
   .qualities__list section:not(:last-child) {
     padding-right: 2rem;
   }
+}
+
+.latest-articles {
+  background-color: #fafafa;
+}
+
+.latest-articles h2 {
+  text-align: center;
+}
+
+.latest-articles .article {
+  background-color: white;
+  border-radius: 3px;
+  margin-bottom: 1.5rem;
+}
+
+.latest-articles .article img {
+  width: 100%;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.latest-articles .article__content {
+  padding: 2rem 2rem 2.875rem 2rem;
+}
+
+.latest-articles .article__author {
+  display: block;
+  font-size: 0.625rem;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.latest-articles .article h3 {
+  font-weight: 300;
+  color: #2d314d;
+  font-size: 1.375rem;
+  margin-bottom: 1.5rem;
+}
+
+.latest-articles .article p {
+  font-size: 1rem;
+  margin: 0;
 }
 
 .flex {

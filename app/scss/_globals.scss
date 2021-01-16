@@ -20,6 +20,14 @@ h1, h2, h3 {
     margin-top: 0px;
 }
 
+h2 {
+    font-weight: 300;
+    color: $dark-blue;
+    line-height: 2.5rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
 a, a:visited, a:hover {
     text-decoration: none;
     color: $grayish-blue;
