@@ -70,6 +70,7 @@ body {
   font-size: 1.123rem;
   color: #9698a6;
   line-height: 1.3;
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -489,6 +490,7 @@ button:hover {
 .latest-articles .article p {
   font-size: 0.875rem;
   margin: 0;
+  font-weight: 300;
 }
 
 @media (min-width: 64em) {
