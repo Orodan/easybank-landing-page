@@ -493,17 +493,18 @@ button:hover {
   font-weight: 300;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   .latest-articles h2 {
     text-align: left;
   }
   .latest-articles__content {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     -webkit-column-gap: 1.875rem;
             column-gap: 1.875rem;
+    row-gap: 1.875rem;
   }
   .latest-articles .article {
     margin-bottom: 0;

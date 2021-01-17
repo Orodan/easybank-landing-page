@@ -50,7 +50,7 @@
 
 // Desktop
 
-@include breakpoint-up(large) {
+@include breakpoint-up(medium) {
     .latest-articles {
         h2 {
             text-align: left;
@@ -58,8 +58,9 @@
 
         &__content {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             column-gap: 1.875rem;
+            row-gap: 1.875rem;
         }
 
         .article {
