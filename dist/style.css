@@ -523,6 +523,70 @@ button:hover {
   }
 }
 
+.footer {
+  background-color: #2d314d;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.footer__logo {
+  margin-bottom: 2rem;
+}
+
+.footer__social-medias {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (max-content)[5];
+      grid-template-columns: repeat(5, -webkit-max-content);
+      grid-template-columns: repeat(5, max-content);
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.footer__social-medias a {
+  display: block;
+  place-self: center stretch;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer__social-medias a:hover {
+  color: #2ec59a;
+}
+
+.footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.footer__links a {
+  color: #f3f4f6;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer__links a:hover {
+  color: #2ec59a;
+}
+
+.footer__links a:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.footer__request-invite-container {
+  margin-bottom: 2rem;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;

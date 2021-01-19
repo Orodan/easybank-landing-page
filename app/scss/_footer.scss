@@ -1,0 +1,50 @@
+.footer {
+    background-color: $dark-blue;
+    padding: 2.5rem;
+    text-align: center;
+
+    &__logo {
+        margin-bottom: 2rem;
+    }
+
+    &__social-medias {
+        display: grid;
+        grid-template-columns: repeat(5, max-content);
+        column-gap: 1rem;
+        justify-content: center;
+        margin-bottom: 2rem;
+
+        a {
+            display: block;
+            place-self: center stretch;
+            transition: color 0.3s ease-in-out;
+
+            &:hover {
+                color: $bright-green;
+            }
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+
+        a {
+            color: $light-grayish-blue;
+            transition: color 0.3s ease-in-out;
+
+            &:hover {
+                color: $bright-green;
+            }
+        }
+
+        a:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__request-invite-container {
+        margin-bottom: 2rem;
+    }
+}
