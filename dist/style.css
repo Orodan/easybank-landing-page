@@ -587,6 +587,81 @@ button:hover {
   margin-bottom: 2rem;
 }
 
+@media (min-width: 40em) {
+  .footer {
+    padding-top: 2.875rem;
+    padding-bottom: 2.875rem;
+  }
+  .footer .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    justify-items: center;
+    -webkit-column-gap: 3rem;
+            column-gap: 3rem;
+  }
+  .footer__logo-social-medias-container {
+    justify-self: start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer__logo {
+    width: 8.75rem;
+    margin-bottom: 0;
+  }
+  .footer__social-medias {
+    margin-bottom: 0;
+  }
+  .footer__links {
+    -ms-grid-column-align: start;
+        justify-self: start;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(auto, 11.25rem))[2];
+        grid-template-columns: repeat(2, minmax(auto, 11.25rem));
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 1rem;
+    margin-bottom: 0;
+    text-align: left;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+  .footer__links a:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .footer__request-invite-copyright-container {
+    justify-self: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__request-invite-container {
+    text-align: right;
+  }
+  .footer__copyright {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
