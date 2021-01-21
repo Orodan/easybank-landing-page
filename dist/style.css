@@ -456,6 +456,10 @@ button:hover {
   margin-bottom: 1.5rem;
 }
 
+.latest-articles .article:hover h3 {
+  color: #2ec59a;
+}
+
 .latest-articles .article img {
   width: 100%;
   border-top-left-radius: 3px;
@@ -481,10 +485,6 @@ button:hover {
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
   cursor: pointer;
-}
-
-.latest-articles .article h3:hover {
-  color: #2ec59a;
 }
 
 .latest-articles .article p {
