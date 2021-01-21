@@ -493,6 +493,28 @@ button:hover {
   font-weight: 300;
 }
 
+.latest-articles .article__image {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  height: 12.5rem;
+}
+
+.latest-articles .image-currency {
+  background-image: url("/images/image-currency.jpg");
+}
+
+.latest-articles .image-restaurant {
+  background-image: url("/images/image-restaurant.jpg");
+}
+
+.latest-articles .image-plane {
+  background-image: url("/images/image-plane.jpg");
+}
+
+.latest-articles .image-confetti {
+  background-image: url("/images/image-confetti.jpg");
+}
+
 @media (min-width: 40em) {
   .latest-articles h2 {
     text-align: left;
@@ -500,8 +522,8 @@ button:hover {
   .latest-articles__content {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(240px, 1fr))[2];
-        grid-template-columns: repeat(2, minmax(240px, 1fr));
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
     -webkit-column-gap: 1.875rem;
             column-gap: 1.875rem;
     row-gap: 1.875rem;
