@@ -48,7 +48,7 @@
     }
 }
 
-// Desktop
+// Tablet
 
 @include breakpoint-up(medium) {
     .latest-articles {
@@ -58,7 +58,7 @@
 
         &__content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-template-columns: repeat(2, minmax(240px, 1fr));
             column-gap: 1.875rem;
             row-gap: 1.875rem;
         }
@@ -81,6 +81,16 @@
             &__content {
                 padding: 1.75rem 1.5rem;
             }
+        }
+    }
+}
+
+// Desktop
+
+@include breakpoint-up(large) {
+    .latest-articles {
+        &__content {
+            grid-template-columns: repeat(4, 1fr);
         }
     }
 }
