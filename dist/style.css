@@ -460,10 +460,12 @@ button:hover {
   color: #2ec59a;
 }
 
-.latest-articles .article img {
-  width: 100%;
+.latest-articles .article__image {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+  height: 12.5rem;
+  background-size: cover;
+  background-position: center center;
 }
 
 .latest-articles .article__content {
@@ -491,12 +493,6 @@ button:hover {
   font-size: 0.875rem;
   margin: 0;
   font-weight: 300;
-}
-
-.latest-articles .article__image {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  height: 12.5rem;
 }
 
 .latest-articles .image-currency {
