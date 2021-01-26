@@ -664,8 +664,10 @@ button:hover {
     width: 100%;
     display: -ms-grid;
     display: grid;
+    grid-auto-flow: column;
     -ms-grid-columns: (minmax(auto, 11.25rem))[2];
         grid-template-columns: repeat(2, minmax(auto, 11.25rem));
+    grid-auto-columns: minmax(auto, 11.25rem);
     -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     row-gap: 1rem;

@@ -84,7 +84,9 @@
             justify-self: start;
             width: 100%;
             display: grid;
+            grid-auto-flow: column;
             grid-template-columns: repeat(2, minmax(auto, 11.25rem));
+            grid-auto-columns: minmax(auto, 11.25rem);
             grid-template-rows: 1fr 1fr 1fr;
             row-gap: 1rem;
             margin-bottom: 0;
