@@ -709,7 +709,7 @@ button:hover::before {
     text-align: right;
   }
   .footer__copyright {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 300;
     text-align: right;
   }
