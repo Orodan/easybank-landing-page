@@ -584,12 +584,15 @@ button:hover {
 .footer__social-medias a {
   display: block;
   place-self: center stretch;
-  -webkit-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
 }
 
-.footer__social-medias a:hover {
-  color: #2ec59a;
+.footer__social-medias a svg path {
+  -webkit-transition: fill 0.3s ease-in-out;
+  transition: fill 0.3s ease-in-out;
+}
+
+.footer__social-medias a:hover svg path {
+  fill: #2ec59a;
 }
 
 .footer__links {

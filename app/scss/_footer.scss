@@ -17,10 +17,13 @@
         a {
             display: block;
             place-self: center stretch;
-            transition: color 0.3s ease-in-out;
+            
+            svg path {
+                transition: fill 0.3s ease-in-out;
+            }
 
-            &:hover {
-                color: $bright-green;
+            &:hover svg path {
+                fill: $bright-green;
             }
         }
     }
